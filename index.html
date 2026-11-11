@@ -12,12 +12,15 @@
   <div class="brand"><span class="logo">🚗</span>Kmify</div>
   <h1>Politique de confidentialité</h1>
   <p>Vos kilomètres restent à vous. Voici, en toute transparence, comment nous traitons vos données.</p>
-  <span class="badge">Dernière mise à jour : 7 octobre 2026</span>
+  <span class="badge">Dernière mise à jour : 10 novembre 2026</span>
 </header>
 <main>
 <nav class="tabs">
   <a class="active" href="index.html">🔒 Confidentialité</a>
+  <a href="cgu.html">📄 CGU</a>
+  <a href="cgv.html">🛒 CGV</a>
   <a href="suppression-compte.html">🗑️ Suppression de compte</a>
+  <a href="privacy-en.html" style="margin-left:auto">🌐 English</a>
 </nav>
 
 <section class="section">
@@ -30,14 +33,16 @@
   <h2><span class="num">2</span>Données concernées</h2>
   <div class="tablewrap"><table>
     <tr><th>Donnée</th><th>Où</th><th>Pourquoi</th></tr>
-    <tr><td>Véhicules, contrats, historique kilométrique, entretiens, carburant, photos de factures, préférences</td><td><span class="pill local">Sur votre appareil uniquement</span></td><td>Fonctionnement de l'application</td></tr>
-    <tr><td>Adresse e-mail et identifiant technique du compte (avec la connexion Google : identifiant Google associé)</td><td><span class="pill cloud">Firebase Authentication (Google)</span></td><td>Création et connexion à votre compte</td></tr>
+    <tr><td>Véhicules, contrats, historique kilométrique, entretiens, carburant, préférences</td><td><span class="pill local">Sur votre appareil uniquement</span></td><td>Fonctionnement de l'application</td></tr>
+    <tr><td>Photos (compteur, état des lieux, factures), photo de profil, documents de contrat et documents du coffre-fort (assurance, carte grise, contrôle technique : photo ou PDF)</td><td><span class="pill local">Sur votre appareil uniquement</span></td><td>Preuves et pré-remplissage du contrat ; la lecture du texte est faite sur l'appareil</td></tr>
+    <tr><td>Adresse e-mail et identifiant technique du compte (avec la connexion Google : identifiant Google associé). Avec une inscription par e-mail, le mot de passe est géré par Firebase ; nous n'y avons jamais accès</td><td><span class="pill cloud">Firebase Authentication (Google)</span></td><td>Création et connexion à votre compte, e-mail de vérification, réinitialisation du mot de passe</td></tr>
     <tr><td>Copie de vos véhicules, historique et entretiens</td><td><span class="pill cloud">Cloud Firestore (Google)</span>, seulement si vous appuyez sur « Sauvegarder dans le cloud »</td><td>Restaurer vos données sur un autre appareil</td></tr>
-    <tr><td>Photos du compteur et de l'état des lieux</td><td><span class="pill local">Sur votre appareil uniquement</span></td><td>Preuves en cas de litige, jamais envoyées</td></tr>
-    <tr><td>Partage en lecture seule (facultatif) : nom du véhicule, kilométrage, quota, dates du contrat</td><td><span class="pill cloud">Cloud Firestore (Google)</span>, seulement si vous créez un code de partage</td><td>Permettre à un proche de consulter votre suivi ; supprimé à l'arrêt du partage ou à la suppression du compte</td></tr>
-    <tr><td>Information d'abonnement ou d'achat à vie actif</td><td><span class="pill cloud">Google Play</span></td><td>Débloquer l'application. Le paiement est géré par Google : Kmify ne reçoit ni ne stocke vos coordonnées bancaires</td></tr>
+    <tr><td>Chiffres de synthèse d'un partage (véhicule, kilométrage, quota, dates)</td><td><span class="pill cloud">Cloud Firestore (Google)</span>, seulement si vous créez un code de partage</td><td>Consultation en lecture seule par la personne de votre choix</td></tr>
+    <tr><td>Relevés envoyés par un conducteur secondaire (kilométrage, identifiant du compte de l'expéditeur)</td><td><span class="pill cloud">Cloud Firestore (Google)</span>, seulement si le propriétaire active l'option</td><td>Ajout au suivi du propriétaire ; supprimés dès leur importation</td></tr>
+    <tr><td>Rapports de plantage : modèle de téléphone, version d'Android, trace technique de l'erreur, identifiant d'installation</td><td><span class="pill cloud">Firebase Crashlytics (Google)</span></td><td>Corriger les bugs et améliorer la stabilité. Aucune donnée de véhicule n'y est jointe</td></tr>
+    <tr><td>Statut d'abonnement ou d'achat à vie</td><td><span class="pill cloud">Google Play</span></td><td>Gestion de l'accès à l'application. Vos coordonnées bancaires ne sont jamais transmises à Kmify</td></tr>
   </table></div>
-  <p class="muted">Les rappels (relevé hebdomadaire, échéances du contrat, rendez-vous d'entretien) sont programmés localement sur votre appareil.</p>
+  <p class="muted">Les rappels (relevé hebdomadaire, échéances du contrat, rendez-vous d'entretien) sont programmés localement sur votre appareil. Le verrouillage biométrique (empreinte, visage) est géré par Android : Kmify ne reçoit ni ne stocke aucune donnée biométrique, seulement la réponse « réussi » ou « échoué ».</p>
 </section>
 
 <section class="section">
@@ -47,19 +52,20 @@
       <li>Aucune publicité dans l'application.</li>
       <li>Aucune vente ni partage de vos données avec des tiers.</li>
       <li>Aucun outil de suivi publicitaire.</li>
-      <li>Aucun envoi vers le cloud sans action de votre part : la sauvegarde est manuelle.</li>
+      <li>Aucun envoi vers le cloud sans action de votre part : la sauvegarde et le partage sont manuels.</li>
     </ul>
   </div>
 </section>
 
 <section class="section">
   <h2><span class="num">4</span>Sous-traitants techniques</h2>
-  <p>Firebase (Google) fournit l'authentification et la sauvegarde cloud, selon la <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a>.</p>
+  <p>Firebase (Google) fournit l'authentification, l'envoi des e-mails de vérification et de réinitialisation, la sauvegarde cloud et les rapports de plantage (Crashlytics) ; Google Play gère les paiements et la demande d'avis (aucune donnée n'est transmise à Kmify à cette occasion). Voir la <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a>.</p>
+  <p>Les e-mails de vérification et de réinitialisation peuvent arriver dans le dossier « courrier indésirable » (spams) : pensez à le vérifier.</p>
 </section>
 
 <section class="section">
   <h2><span class="num">5</span>Conservation et suppression</h2>
-  <p>Les données locales restent sur votre appareil jusqu'à leur suppression ou la désinstallation de l'application. Les données de compte et de sauvegarde cloud sont conservées tant que votre compte existe.</p>
+  <p>Les données locales restent sur votre appareil jusqu'à leur suppression ou la désinstallation de l'application. Les données de compte, de sauvegarde cloud et de partage sont conservées tant que votre compte existe.</p>
   <a class="btn" href="suppression-compte.html">Supprimer mon compte et mes données</a>
 </section>
 
@@ -76,7 +82,7 @@
 
 <section class="section">
   <h2><span class="num">7</span>Sécurité</h2>
-  <p>Les échanges avec Firebase sont chiffrés. Seul le titulaire d'un compte peut lire ou modifier sa propre sauvegarde cloud.</p>
+  <p>Les échanges avec Firebase sont chiffrés. Seul le titulaire d'un compte peut lire ou modifier sa propre sauvegarde cloud. Un code de partage donne uniquement un accès en lecture seule à des chiffres de synthèse.</p>
 </section>
 
 <section class="section">
@@ -88,6 +94,7 @@
   <h2><span class="num">9</span>Modifications et contact</h2>
   <p>Cette politique peut évoluer ; la date de mise à jour figure en haut de page. Une question : <a href="mailto:kmifypro@gmail.com">kmifypro@gmail.com</a>.</p>
 </section>
+
 </main>
 <footer>© Kmify — Suivi kilométrique pour véhicules en leasing</footer>
 </body>
